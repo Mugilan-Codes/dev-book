@@ -1,9 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { check, validationResult } = require('express-validator');
-const gravatar = require('gravatar');
 const bcrypt = require('bcryptjs');
-const normalize = require('normalize-url');
 
 const User = require('../../models/User');
 
@@ -34,19 +32,9 @@ router.post(
         return res.status(400).json({ errors: [{ msg: 'User Exists!' }] });
       }
 
-      const avatar = normalize(
-        gravatar.url(email, {
-          s: '200',
-          r: 'pg',
-          d: 'mm',
-        }),
-        { forceHttps: true }
-      );
-
       user = new User({
         name,
         email,
-        avatar,
         password,
       });
 
