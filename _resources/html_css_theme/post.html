@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://kit.fontawesome.com/9cd49f9282.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Gotu&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Post</title>
+  </head>
+  <body>
+    <nav class="navbar bg-dark">
+      <h1>
+        <a href="dashboard.html"><i class="fas fa-code-branch"></i> DevBook</a>
+      </h1>
+      <ul>
+        <li><a href="profiles.html">Developers</a></li>
+        <li><a href="posts.html">Posts</a></li>
+        <li>
+          <a href="dashboard.html"
+            ><i class="fas fa-user"></i>
+            <span class="hide-sm"> Dashboard</span></a
+          >
+        </li>
+        <li>
+          <a href="login.html"
+            ><i class="fas fa-sign-out-alt"></i>
+            <span class="hide-sm"> Logout</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <section class="container">
+      <a href="posts.html" class="btn">Back To Posts</a>
+      <div class="post bg-white p-1 my-1">
+        <div>
+          <a href="profile.html">
+            <img
+              class="round-img"
+              src="https://avatars.githubusercontent.com/Mugilan23"
+              alt="Github DP instead of Gravatar"
+              onerror="imgError(this)"
+            />
+            <h4>Mugilan E.S.</h4>
+          </a>
+        </div>
+        <div>
+          <p class="my-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+            possimus corporis sunt necessitatibus! Minus nesciunt soluta
+            suscipit nobis. Amet accusamus distinctio cupiditate blanditiis
+            dolor? Illo perferendis eveniet cum cupiditate aliquam?
+          </p>
+        </div>
+      </div>
+
+      <div class="post-form">
+        <div class="post-form-header bg-primary">
+          <h3>Leave A Comment</h3>
+        </div>
+        <form class="form my-1">
+          <textarea
+            name="text"
+            cols="30"
+            rows="5"
+            placeholder="Comment on this post"
+          ></textarea>
+          <input type="submit" class="btn btn-dark my-1" value="Submit" />
+        </form>
+      </div>
+
+      <div class="posts">
+        <div class="post bg-white p-1 my-1">
+          <div>
+            <a href="profile.html">
+              <img
+                class="round-img"
+                src="https://avatars.githubusercontent.com/Mugilan23"
+                alt="Github DP instead of Gravatar"
+                onerror="imgError(this)"
+              />
+              <h4>Mugilan E.S.</h4>
+            </a>
+          </div>
+          <div>
+            <p class="my-1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+              possimus corporis sunt necessitatibus! Minus nesciunt soluta
+              suscipit nobis. Amet accusamus distinctio cupiditate blanditiis
+              dolor? Illo perferendis eveniet cum cupiditate aliquam?
+            </p>
+          </div>
+        </div>
+
+        <div class="post bg-white p-1 my-1">
+          <div>
+            <a href="profile.html">
+              <img
+                class="round-img"
+                src="https://avatars.githubusercontent.com/Mugilan23"
+                alt="Github DP instead of Gravatar"
+                onerror="imgError(this)"
+              />
+              <h4>Mugilan E.S.</h4>
+            </a>
+          </div>
+          <div>
+            <p class="my-1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+              possimus corporis sunt necessitatibus! Minus nesciunt soluta
+              suscipit nobis. Amet accusamus distinctio cupiditate blanditiis
+              dolor? Illo perferendis eveniet cum cupiditate aliquam?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

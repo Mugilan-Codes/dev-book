@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://kit.fontawesome.com/9cd49f9282.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Gotu&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Posts</title>
+  </head>
+  <body>
+    <nav class="navbar bg-dark">
+      <h1>
+        <a href="dashboard.html"><i class="fas fa-code-branch"></i> DevBook</a>
+      </h1>
+      <ul>
+        <li><a href="profiles.html">Developers</a></li>
+        <li><a href="posts.html">Posts</a></li>
+        <li>
+          <a href="dashboard.html"
+            ><i class="fas fa-user"></i>
+            <span class="hide-sm"> Dashboard</span></a
+          >
+        </li>
+        <li>
+          <a href="login.html"
+            ><i class="fas fa-sign-out-alt"></i>
+            <span class="hide-sm"> Logout</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <section class="container">
+      <h1 class="large text-primary">Posts</h1>
+      <p class="lead">
+        <i class="fas fa-heart"></i> Welcome to the Developer Community
+      </p>
+
+      <div class="post-form">
+        <div class="post-form-header bg-primary">
+          <h3>Say Something...</h3>
+        </div>
+        <form class="form my-1">
+          <textarea cols="30" rows="5" placeholder="Create a Post"></textarea>
+          <input type="submit" value="Submit" class="btn btn-dark my-1" />
+        </form>
+        <div class="posts">
+          <div class="post bg-white my-1 p-1">
+            <div>
+              <a href="profile.html">
+                <img
+                  src="https://avatars.githubusercontent.com/Mugilan23"
+                  alt="Github DP instead of Gravatar"
+                  class="round-img"
+                  onerror="imgError(this)"
+                />
+                <h4>Mugilan E.S.</h4>
+              </a>
+            </div>
+
+            <div>
+              <p class="my-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                eveniet optio amet deleniti? Nisi est deserunt molestias quos
+                voluptatem suscipit iure dolores sunt, similique nam odit
+                expedita labore hic voluptates error. Similique, et. Tempore
+                tenetur expedita odit libero vero. Labore.
+              </p>
+              <button class="btn">
+                <i class="fas fa-thumbs-up"></i> <span>4</span>
+              </button>
+              <button class="btn">
+                <i class="fas fa-thumbs-down"></i>
+              </button>
+              <a href="post.html" class="btn btn-primary">Discussion</a>
+            </div>
+          </div>
+
+          <div class="post bg-white my-1 p-1">
+            <div>
+              <a href="profile.html">
+                <img
+                  src="https://avatars.githubusercontent.com/Mugilan23"
+                  alt="Github DP instead of Gravatar"
+                  class="round-img"
+                  onerror="imgError(this)"
+                />
+                <h4>Mugilan E.S.</h4>
+              </a>
+            </div>
+
+            <div>
+              <p class="my-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                eveniet optio amet deleniti? Nisi est deserunt molestias quos
+                voluptatem suscipit iure dolores sunt, similique nam odit
+                expedita labore hic voluptates error. Similique, et. Tempore
+                tenetur expedita odit libero vero. Labore.
+              </p>
+              <button class="btn">
+                <i class="fas fa-thumbs-up"></i> <span>4</span>
+              </button>
+              <button class="btn">
+                <i class="fas fa-thumbs-down"></i>
+              </button>
+              <a href="post.html" class="btn btn-primary">Discussion</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

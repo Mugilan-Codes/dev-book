@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://kit.fontawesome.com/9cd49f9282.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Gotu&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Register</title>
+  </head>
+  <body>
+    <nav class="navbar bg-dark">
+      <h1>
+        <a href="dashboard.html"><i class="fas fa-code-branch"></i> DevBook</a>
+      </h1>
+      <ul>
+        <li><a href="profiles.html">Developers</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+    <section class="container">
+      <h1 class="large text-primary">Sign Up</h1>
+      <p class="lead"><i class="fas fa-user-ninja"></i> Create Your Account</p>
+      <form action="dashboard.html" class="form">
+        <div class="form-group">
+          <input type="text" placeholder="Name" required />
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Email Address" required />
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Github Username (Optional)" />
+          <small class="form-text">
+            Enter yout Github username for a DP
+          </small>
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            placeholder="Password"
+            minlength="6"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            minlength="6"
+            required
+          />
+        </div>
+        <input type="submit" value="Register" class="btn btn-primary" />
+      </form>
+      <p class="my-1">
+        Already Have an Account? <a href="login.html">Sign In</a>
+      </p>
+    </section>
+  </body>
+</html>

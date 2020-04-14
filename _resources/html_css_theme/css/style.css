@@ -1,0 +1,652 @@
+.m-1 {
+  margin: 1rem;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.my-3 {
+  margin: 3rem 0;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.m-4 {
+  margin: 4rem;
+}
+
+.my-4 {
+  margin: 4rem 0;
+}
+
+.p-4 {
+  padding: 4rem;
+}
+
+.py-4 {
+  padding: 4rem 0;
+}
+
+.m-5 {
+  margin: 5rem;
+}
+
+.my-5 {
+  margin: 5rem 0;
+}
+
+.p-5 {
+  padding: 5rem;
+}
+
+.py-5 {
+  padding: 5rem 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
+
+.x-large {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.large {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.text-primary {
+  color: #b88017;
+}
+
+.round-img {
+  border-radius: 50%;
+}
+
+.line {
+  height: 1px;
+  background: #ccc;
+  margin: 1.5rem 0;
+}
+
+.bg-primary {
+  background-color: #b88017;
+  color: #fff;
+}
+
+.bg-light {
+  background-color: #f4f4f4;
+  color: #333;
+  border: #ccc 1px solid;
+}
+
+.bg-dark {
+  background-color: #403734;
+  color: #fff;
+}
+
+.bg-success {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.bg-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.bg-white {
+  background-color: #fff;
+  color: #333;
+  border: #ccc 1px solid;
+}
+
+.btn {
+  display: inline-block;
+  background: #f4f4f4;
+  color: #333;
+  padding: 0.4rem 1.3rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.btn.btn-primary {
+  background-color: #b88017;
+  color: #fff;
+}
+
+.btn.btn-primary:hover {
+  background: #cf901a;
+}
+
+.btn.btn-dark {
+  background-color: #403734;
+  color: #fff;
+}
+
+.btn.btn-dark:hover {
+  background: #4e433f;
+}
+
+.btn.btn-success {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.btn.btn-success:hover {
+  background: #2dbc4e;
+}
+
+.btn.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn.btn-danger:hover {
+  background: #e04b59;
+}
+
+.btn:hover {
+  background: #786762;
+  color: #fff;
+}
+
+.alert {
+  padding: 0.8rem;
+  margin: 1rem;
+  opacity: 0.9;
+  background: #f4f4f4;
+  color: #333;
+}
+
+.alert.alert-primary {
+  background-color: #b88017;
+  color: #fff;
+}
+
+.alert.alert-dark {
+  background-color: #403734;
+  color: #fff;
+}
+
+.alert.alert-success {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.alert.alert-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.badge {
+  font-size: 0.8rem;
+  padding: 0.1rem;
+  text-align: center;
+  margin: 0.3rem;
+  background: #f4f4f4;
+  color: #333;
+}
+
+.badge.badge-primary {
+  background-color: #b88017;
+  color: #fff;
+}
+
+.badge.badge-dark {
+  background-color: #403734;
+  color: #fff;
+}
+
+.badge.badge-success {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.badge.badge-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.dark-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.table th,
+.table td {
+  padding: 1rem;
+  text-align: left;
+}
+
+.table th {
+  background: #f4f4f4;
+}
+
+.form-group {
+  margin: 1.2rem 0;
+}
+
+.form-text {
+  display: block;
+  margin-top: 0.3rem;
+  color: #888;
+}
+
+.form input[type='text'],
+.form input[type='email'],
+.form input[type='password'],
+.form input[type='date'],
+.form select,
+.form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+}
+
+.form input[type='submit'] {
+  font: inherit;
+}
+
+.form .social-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form .social-input i {
+  padding: 0.5rem;
+  width: 4rem;
+}
+
+.form .social-input i.fa-twitter {
+  color: #55acee;
+}
+
+.form .social-input i.fa-facebook {
+  color: #3b5999;
+}
+
+.form .social-input i.fa-youtube {
+  color: #cd201f;
+}
+
+.form .social-input i.fa-reddit {
+  color: #ff5700;
+}
+
+.form .social-input i.fa-linkedin {
+  color: #0077b5;
+}
+
+.form .social-input i.fa-instagram {
+  color: #e4405f;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Gotu', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #b88017;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.7rem 2rem;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  border-bottom: solid 1px #b88017;
+  opacity: 0.9;
+}
+
+.navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar a {
+  color: #b88017;
+  padding: 0.45rem;
+  margin: 0 0.25rem;
+}
+
+.navbar a:hover {
+  color: #fff;
+}
+
+.landing {
+  position: relative;
+  background: url("../img/showcase.jpg") no-repeat center center/cover;
+  height: 100vh;
+}
+
+.landing-inner {
+  color: #fff;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.profile {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 4fr 2fr;
+      grid-template-columns: 2fr 4fr 2fr;
+  grid-gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.profile-grid {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'top top' 'about about' 'exp edu' 'github github';
+  grid-gap: 1rem;
+}
+
+.profile-grid .profile-top {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: top;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.profile-grid .profile-top img {
+  width: 250px;
+}
+
+.profile-grid .profile-top .icons a {
+  color: #fff;
+  margin: 0 0.3rem;
+}
+
+.profile-grid .profile-top .icons a:hover {
+  color: #403734;
+}
+
+.profile-grid .profile-about {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: about;
+  text-align: center;
+}
+
+.profile-grid .profile-about .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.profile-grid .profile-exp {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: exp;
+}
+
+.profile-grid .profile-edu {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: edu;
+}
+
+.profile-grid .profile-exp > div,
+.profile-grid .profile-edu > div {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: #ccc 1px dotted;
+}
+
+.profile-grid .profile-exp > div:last-child,
+.profile-grid .profile-edu > div:last-child {
+  border: none;
+}
+
+.profile-grid .profile-exp p,
+.profile-grid .profile-edu p {
+  margin: 0.5rem 0;
+}
+
+.profile-grid .profile-github {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: github;
+}
+
+.profile-grid .profile-github .repo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profile-grid .profile-github .repo > div:first-child {
+  -webkit-box-flex: 7;
+      -ms-flex: 7;
+          flex: 7;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+
+.profile-grid .profile-github .repo > div:last-child {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+
+.post-form-header {
+  padding: 0.5rem;
+}
+
+.post {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4fr;
+      grid-template-columns: 1fr 4fr;
+  grid-gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.post > div:first-child {
+  text-align: center;
+}
+
+.post img {
+  width: 150px;
+}
+
+@media (max-width: 700px) {
+  .hide-sm {
+    display: none;
+  }
+  .container {
+    margin-top: 8rem;
+  }
+  .x-large {
+    font-size: 3rem;
+  }
+  .large {
+    font-size: 2rem;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+  .navbar {
+    display: block;
+    text-align: center;
+  }
+  .navbar ul {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar h1 {
+    margin-bottom: 1rem;
+  }
+  .dash-buttons a {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.2rem;
+  }
+  .profile {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .profile ul {
+    display: none;
+  }
+  .profile-grid {
+        grid-template-areas: 'top' 'about' 'exp' 'edu' 'github';
+  }
+  .profile-about .skills {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .post {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .post a,
+  .post button {
+    padding: 0.3rem 0.4rem;
+  }
+}

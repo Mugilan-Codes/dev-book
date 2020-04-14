@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://kit.fontawesome.com/9cd49f9282.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Gotu&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Profile Page</title>
+  </head>
+  <body>
+    <nav class="navbar bg-dark">
+      <h1>
+        <a href="dashboard.html"><i class="fas fa-code-branch"></i> DevBook</a>
+      </h1>
+      <ul>
+        <li><a href="profiles.html">Developers</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+    <section class="container">
+      <a href="profiles.html" class="btn">Back to Profiles</a>
+
+      <div class="profile-grid my-1">
+        <!-- Top -->
+        <div class="profile-top bg-primary p-2">
+          <img
+            src="https://avatars.githubusercontent.com/Mugilan23"
+            alt="Github DP instead of Gravatar"
+            class="round-img my-1"
+            onerror="imgError(this)"
+          />
+
+          <h1 class="large">Mugilan E.S.</h1>
+          <p class="lead">Developor at Google</p>
+          <p>Chennai, TN</p>
+          <div class="icons my-1">
+            <a href="#"><i class="fas fa-globe fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-reddit fa-2x"></i></a>
+            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+          </div>
+        </div>
+
+        <!-- About -->
+        <div class="profile-about bg-light p-2">
+          <h2 class="text-primary">Mugilan's Bio</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            cupiditate quaerat voluptates mollitia a consectetur eum et
+            perferendis assumenda blanditiis, velit id error hic, soluta totam
+            sunt dolores, aut facilis.
+          </p>
+          <div class="line"></div>
+          <h2 class="text-primary">Skill Set</h2>
+          <div class="skills">
+            <div class="p-1"><i class="fas fa-check"></i> HTML</div>
+            <div class="p-1"><i class="fas fa-check"></i> CSS</div>
+            <div class="p-1"><i class="fas fa-check"></i> JavaScript</div>
+            <div class="p-1"><i class="fas fa-check"></i> Python</div>
+            <div class="p-1"><i class="fas fa-check"></i> Java</div>
+          </div>
+        </div>
+
+        <!-- Experience -->
+        <div class="profile-exp bg-white p-2">
+          <h2 class="text-primary">Experiences</h2>
+          <div>
+            <h3>Google</h3>
+            <p>April 2019 - Current</p>
+            <p><strong>Position: </strong>Senior Developer</p>
+            <p>
+              <strong>Description: </strong>Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Fuga tenetur deserunt ab modi, vel
+              repellat.
+            </p>
+          </div>
+          <div>
+            <h3>Microsoft</h3>
+            <p>January 2018 - February 2019</p>
+            <p><strong>Position: </strong>Junior Developer</p>
+            <p>
+              <strong>Description: </strong>Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Fuga tenetur deserunt ab modi, vel
+              repellat.
+            </p>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="profile-edu bg-white p-2">
+          <h2 class="text-primary">Education</h2>
+          <div>
+            <h3>DG Vaishnav College</h3>
+            <p>March 2014 - March 2017</p>
+            <p><strong>Field of Study: </strong>Computer Science</p>
+            <p>
+              <strong>Description: </strong>Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Fuga tenetur deserunt ab modi, vel
+              repellat.
+            </p>
+          </div>
+        </div>
+
+        <!-- Github Repos -->
+        <div class="profile-github">
+          <h2 class="text-primary my-1">
+            <i class="fab fa-github"></i> Github Repos
+          </h2>
+          <div class="repo bg-white my-1 p-1">
+            <div>
+              <h4><a href="#">Repo One</a></h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Blanditiis, maxime!
+              </p>
+            </div>
+
+            <div>
+              <ul>
+                <li class="badge badge-primary">Stars: 44</li>
+                <li class="badge badge-dark">Watchers: 23</li>
+                <li class="badge badge-light">Forks: 57</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="repo bg-white my-1 p-1">
+            <div>
+              <h4><a href="#">Repo Two</a></h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Blanditiis, maxime!
+              </p>
+            </div>
+
+            <div>
+              <ul>
+                <li class="badge badge-primary">Stars: 44</li>
+                <li class="badge badge-dark">Watchers: 23</li>
+                <li class="badge badge-light">Forks: 57</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="repo bg-white my-1 p-1">
+            <div>
+              <h4><a href="#">Repo Three</a></h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Blanditiis, maxime!
+              </p>
+            </div>
+
+            <div>
+              <ul>
+                <li class="badge badge-primary">Stars: 44</li>
+                <li class="badge badge-dark">Watchers: 23</li>
+                <li class="badge badge-light">Forks: 57</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
