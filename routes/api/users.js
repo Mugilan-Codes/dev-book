@@ -34,10 +34,16 @@ router.post(
         return res.status(400).json({ errors: [{ msg: 'User Exists!' }] });
       }
 
+      let avatar =
+        githubusername !== undefined
+          ? `https://avatars.githubusercontent.com/${githubusername}?s=200`
+          : 'https://upload.wikimedia.org/wikipedia/commons/d/d1/Identicon.svg';
+
       user = new User({
         name,
         email,
         githubusername,
+        avatar,
         password,
       });
 
