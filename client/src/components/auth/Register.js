@@ -73,7 +73,7 @@ export const Register = () => {
             onChange={(e) => onChange(e)}
           />
           <small className='form-text'>
-            Enter yout Github username for a DP
+            Enter yout Github username for a DP eg.Mugilan-Codes
           </small>
         </div>
         <div className='form-group'>
