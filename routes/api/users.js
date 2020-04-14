@@ -34,10 +34,17 @@ router.post(
         return res.status(400).json({ errors: [{ msg: 'User Exists!' }] });
       }
 
+      // https://ui-avatars.com/api/?name=${name.replace(/\s\s+/g, ' ').split(' ').join('+')}&size=200  // https://ui-avatars.com/
+      // https://picsum.photos/200  // https://picsum.photos/
+
+      // Using Github DP as avatar. No Github means default DP will be set
       let avatar =
         githubusername !== undefined
           ? `https://avatars.githubusercontent.com/${githubusername}?s=200`
-          : 'https://upload.wikimedia.org/wikipedia/commons/d/d1/Identicon.svg';
+          : `https://ui-avatars.com/api/?name=${name
+              .replace(/\s\s+/g, ' ')
+              .split(' ')
+              .join('+')}&size=200`;
 
       user = new User({
         name,
