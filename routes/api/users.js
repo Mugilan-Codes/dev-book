@@ -7,6 +7,9 @@ const bcrypt = require('bcryptjs');
 
 const User = require('../../models/User');
 
+// For checking if a string is blank, null or undefined
+const isBlank = (str) => !str || /^\s*$/.test(str);
+
 // @route   POST api/users
 // @desc    Register User
 // @access  Public
@@ -37,11 +40,8 @@ router.post(
       // https://ui-avatars.com/api/?name=${name.replace(/\s\s+/g, ' ').split(' ').join('+')}&size=200  // https://ui-avatars.com/
       // https://picsum.photos/200  // https://picsum.photos/
 
-      // For checking if a string is blank, null or undefined
-      const isBlank = (str) => !str || /^\s*$/.test(str);
-
       // Using Github DP as avatar. No Github means default DP will be set
-      let avatar = isBlank(githubusername)
+      let avatar = !isBlank(githubusername)
         ? `https://avatars.githubusercontent.com/${githubusername}?s=200`
         : `https://ui-avatars.com/api/?name=${name
             .replace(/\s\s+/g, ' ')
