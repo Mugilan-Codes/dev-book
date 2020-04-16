@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 import { getCurrentProfile } from '../../actions/profile';
 import Spinner from '../layout/Spinner';
+import DashboardActions from './DashboardActions';
 
 const Dashboard = ({
   getCurrentProfile,
@@ -24,7 +25,9 @@ const Dashboard = ({
         <i className='fas fa-user-ninja'></i> Welcome {user && user.name}
       </p>
       {profile !== null ? (
-        <Fragment>Has</Fragment>
+        <Fragment>
+          <DashboardActions />
+        </Fragment>
       ) : (
         <Fragment>
           <p>You have not setup a Profile. Please add some info</p>
