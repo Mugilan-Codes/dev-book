@@ -48,7 +48,7 @@ const EditProfile = ({
       linkedin: loading || !profile.social ? '' : profile.social.linkedin,
       reddit: loading || !profile.social ? '' : profile.social.reddit,
     });
-  }, [loading]);
+  }, [loading, getCurrentProfile]);
 
   const {
     company,
