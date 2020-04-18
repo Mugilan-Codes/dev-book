@@ -1,5 +1,0 @@
-{
-  "mongoURI": "mongodb+srv://mugilan23:mugilan23@devbook-9ehd7.mongodb.net/test?retryWrites=true&w=majority",
-  "jwtSecret": "MugilanIsAwesome",
-  "githubToken": "bb08f8b959f5a714cf7cb9589b08cae0424d3edb"
-}
