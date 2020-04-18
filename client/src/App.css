@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap');
 .m-1 {
   margin: 1rem;
 }
@@ -351,7 +352,7 @@
 }
 
 body {
-  font-family: 'Gotu', sans-serif;
+  font-family: 'Montserrat', 'Raleway', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   background-color: #fff;
