@@ -1,16 +1,16 @@
-[![time tracker](https://wakatime.com/badge/github/Mugilan-Codes/dev-book.svg)](https://wakatime.com/badge/github/Mugilan-Codes/dev-book)
-
 # DevBook
 
-## Web Programming Project for Second Semester
+[![time tracker](https://wakatime.com/badge/github/Mugilan-Codes/dev-book.svg)](https://wakatime.com/badge/github/Mugilan-Codes/dev-book)
 
-### Technologies Used:
+## Web Programming Project
+
+### Technologies Used
 
 - [MongoDB](https://www.mongodb.com/)
 - [ExpressJS](https://expressjs.com/)
 - [ReactJS](https://reactjs.org/)
 - [NodeJS](https://nodejs.org/en/)
 
-### Created By:
+### Created By
 
     Mugilan E.S.
