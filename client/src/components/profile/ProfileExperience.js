@@ -1,19 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Moment from 'react-moment';
+
+import formatDate from '../../utils/formatDate';
 
 const ProfileExperience = ({
   experience: { company, title, location, from, to, current, description },
 }) => (
   <div>
-    <h3>{company}</h3>
+    <h3 className='text-dark'>{company}</h3>
     <p>
-      <Moment format='DD/MMM/YYYY'>{from}</Moment> -{' '}
-      {!to ? 'Now' : <Moment format='DD/MMM/YYYY'>{to}</Moment>}
+      {formatDate(from)} - {to ? formatDate(to) : 'Now'}
     </p>
     <p>
       <strong>Position: </strong>
       {title}
+    </p>
+    <p>
+      <strong>Location: </strong> {location}
     </p>
     <p>
       <strong>Description: </strong>

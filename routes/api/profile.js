@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { check, validationResult } = require('express-validator');
-const axios = require('axios');
+const axios = require('axios').default;
 const config = require('config');
 const normalize = require('normalize-url');
 
@@ -186,15 +186,8 @@ router.put(
     if (!errors.isEmpty())
       return res.status(400).json({ errors: errors.array() });
 
-    const {
-      title,
-      company,
-      location,
-      from,
-      to,
-      current,
-      description,
-    } = req.body;
+    const { title, company, location, from, to, current, description } =
+      req.body;
 
     const newExp = {
       title,
@@ -262,15 +255,8 @@ router.put(
     if (!errors.isEmpty())
       return res.status(400).json({ errors: errors.array() });
 
-    const {
-      school,
-      degree,
-      fieldofstudy,
-      from,
-      to,
-      current,
-      description,
-    } = req.body;
+    const { school, degree, fieldofstudy, from, to, current, description } =
+      req.body;
 
     const newEdu = {
       school,
