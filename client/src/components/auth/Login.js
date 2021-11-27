@@ -1,5 +1,5 @@
-import React, { Fragment, useState } from 'react';
-import { Link, Redirect } from 'react-router-dom';
+import { useState } from 'react';
+import { Link, Navigate } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
@@ -13,37 +13,40 @@ const Login = ({ login, isAuthenticated }) => {
 
   const { email, password } = formData;
 
-  const onChange = (e) =>
+  const handleOnChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
-  const onSubmit = async (e) => {
+  const handleOnSubmit = async (e) => {
     e.preventDefault();
 
-    login(email, password);
+    await login(email, password);
   };
 
   // Redirect Logged in User
   if (isAuthenticated) {
-    return <Redirect to='/dashboard' />;
+    return <Navigate to='/dashboard' />;
   }
 
   return (
-    <Fragment>
+    <section className='container'>
       <h1 className='large text-primary'>Sign In</h1>
+
       <p className='lead'>
         <i className='fas fa-user-ninja'></i> Sign Into Your Account
       </p>
-      <form className='form' onSubmit={(e) => onSubmit(e)}>
+
+      <form className='form' onSubmit={handleOnSubmit}>
         <div className='form-group'>
           <input
             type='email'
             placeholder='Email Address'
             name='email'
             value={email}
-            onChange={(e) => onChange(e)}
+            onChange={handleOnChange}
             required
           />
         </div>
+
         <div className='form-group'>
           <input
             type='password'
@@ -51,16 +54,18 @@ const Login = ({ login, isAuthenticated }) => {
             minLength='6'
             name='password'
             value={password}
-            onChange={(e) => onChange(e)}
+            onChange={handleOnChange}
             required
           />
         </div>
+
         <input type='submit' value='Login' className='btn btn-primary' />
       </form>
+
       <p className='my-1'>
         Don't Have an Account? <Link to='/register'>Sign Up</Link>
       </p>
-    </Fragment>
+    </section>
   );
 };
 

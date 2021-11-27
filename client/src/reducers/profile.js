@@ -5,6 +5,7 @@ import {
   UPDATE_PROFILE,
   GET_PROFILES,
   GET_REPOS,
+  NO_REPOS,
 } from '../actions/types';
 
 const initialState = {
@@ -15,7 +16,7 @@ const initialState = {
   error: {},
 };
 
-export default (state = initialState, action) => {
+const profileReducer = (state = initialState, action) => {
   const { type, payload } = action;
 
   switch (type) {
@@ -32,12 +33,6 @@ export default (state = initialState, action) => {
         profiles: payload,
         loading: false,
       };
-    case GET_REPOS:
-      return {
-        ...state,
-        repos: payload,
-        loading: false,
-      };
     case PROFILE_ERROR:
       return {
         ...state,
@@ -50,9 +45,22 @@ export default (state = initialState, action) => {
         ...state,
         profile: null,
         repos: [],
+      };
+    case GET_REPOS:
+      return {
+        ...state,
+        repos: payload,
         loading: false,
       };
+    case NO_REPOS:
+      return {
+        ...state,
+        repos: [],
+      };
+
     default:
       return state;
   }
 };
+
+export default profileReducer;

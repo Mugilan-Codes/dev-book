@@ -1,4 +1,3 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 
 const ProfileTop = ({
@@ -19,51 +18,42 @@ const ProfileTop = ({
     />
 
     <h1 className='large'>{name}</h1>
+
     <p className='lead'>
       {status}
-      {company && <span> at {company}</span>}
+      {company ? <span> at {company}</span> : null}
     </p>
-    <p>{location && <span>{location}</span>}</p>
+
+    <p>{location ? <span>{location}</span> : null}</p>
+
     <div className='icons my-1'>
-      {website && (
+      {website ? (
         <a href={website} target='_blank' rel='noopener noreferrer'>
           <i className='fas fa-globe fa-2x'></i>
         </a>
-      )}
-      {social && social.twitter && (
-        <a href={social.twitter} target='_blank' rel='noopener noreferrer'>
-          <i className='fab fa-twitter fa-2x'></i>
-        </a>
-      )}
-      {social && social.facebook && (
-        <a href={social.facebook} target='_blank' rel='noopener noreferrer'>
-          <i className='fab fa-facebook fa-2x'></i>
-        </a>
-      )}
-      {social && social.reddit && (
-        <a href={social.reddit} target='_blank' rel='noopener noreferrer'>
-          <i className='fab fa-reddit fa-2x'></i>
-        </a>
-      )}
-      {social && social.linkedin && (
-        <a href={social.linkedin} target='_blank' rel='noopener noreferrer'>
-          <i className='fab fa-linkedin fa-2x'></i>
-        </a>
-      )}
-      {social && social.youtube && (
-        <a href={social.youtube} target='_blank' rel='noopener noreferrer'>
-          <i className='fab fa-youtube fa-2x'></i>
-        </a>
-      )}
-      {social && social.instagram && (
-        <a href={social.instagram} target='_blank' rel='noopener noreferrer'>
-          <i className='fab fa-instagram fa-2x'></i>
-        </a>
-      )}
+      ) : null}
+
+      {social
+        ? Object.entries(social)
+            .filter(([_, value]) => value)
+            .map(([key, value]) => (
+              <a
+                key={key}
+                href={value}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                {' '}
+                <i className={`fab fa-${key} fa-2x`}></i>
+              </a>
+            ))
+        : null}
     </div>
   </div>
 );
 
-ProfileTop.propTypes = { profile: PropTypes.object.isRequired };
+ProfileTop.propTypes = {
+  profile: PropTypes.object.isRequired,
+};
 
 export default ProfileTop;

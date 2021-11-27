@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from 'react';
+import { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
@@ -12,16 +12,18 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
   }, [getProfiles]);
 
   return (
-    <Fragment>
+    <section className='container'>
       {loading ? (
         <Spinner />
       ) : (
-        <Fragment>
+        <>
           <h1 className='large text-primary'>Developers</h1>
+
           <p className='lead'>
             <i className='fas fa-laptop-code'></i> Browse and Connect with
             Developers
           </p>
+
           <div className='profiles'>
             {profiles.length > 0 ? (
               profiles.map((profile) => (
@@ -31,9 +33,9 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
               <h4>No Profiles found...</h4>
             )}
           </div>
-        </Fragment>
+        </>
       )}
-    </Fragment>
+    </section>
   );
 };
 

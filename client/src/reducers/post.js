@@ -9,9 +9,14 @@ import {
   REMOVE_COMMENT,
 } from '../actions/types';
 
-const initialState = { posts: [], post: null, loading: true, error: {} };
+const initialState = {
+  posts: [],
+  post: null,
+  loading: true,
+  error: {},
+};
 
-export default (state = initialState, action) => {
+const postReducer = (state = initialState, action) => {
   const { type, payload } = action;
 
   switch (type) {
@@ -74,3 +79,5 @@ export default (state = initialState, action) => {
       return state;
   }
 };
+
+export default postReducer;

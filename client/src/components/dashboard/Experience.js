@@ -1,4 +1,3 @@
-import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
@@ -9,10 +8,13 @@ const Experience = ({ experience, deleteExperience }) => {
   const experiences = experience.map((exp) => (
     <tr key={exp._id}>
       <td>{exp.company}</td>
+
       <td className='hide-sm'>{exp.title}</td>
+
       <td>
         {formatDate(exp.from)} - {exp.to ? formatDate(exp.to) : 'Now'}
       </td>
+
       <td>
         <button
           onClick={() => deleteExperience(exp._id)}
@@ -25,20 +27,25 @@ const Experience = ({ experience, deleteExperience }) => {
   ));
 
   return (
-    <Fragment>
+    <>
       <h2 className='my-2'>Experience Creadentials</h2>
+
       <table className='table'>
         <thead>
           <tr>
             <th>Company</th>
+
             <th className='hide-sm'>Title</th>
+
             <th>Years</th>
+
             <th />
           </tr>
         </thead>
+
         <tbody>{experiences}</tbody>
       </table>
-    </Fragment>
+    </>
   );
 };
 

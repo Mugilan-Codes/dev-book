@@ -1,4 +1,3 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
@@ -21,12 +20,16 @@ const CommentItem = ({
           alt='Github DP instead of Gravatar'
           onerror='imgError(this)'
         />
+
         <h4>{name}</h4>
       </Link>
     </div>
+
     <div>
       <p class='my-1'>{text}</p>
+
       <p className='post-date'>Posted on {formatDate(date)}</p>
+
       {!auth.loading && user === auth.user._id && (
         <button
           onClick={(e) => deleteComment(postId, _id)}
