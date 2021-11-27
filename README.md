@@ -4,6 +4,11 @@
 
 ## Web Programming Project
 
+### TODO
+
+- Better Logging
+- Fetch Popular Github repos
+
 ### Technologies Used
 
 - [MongoDB](https://www.mongodb.com/)
