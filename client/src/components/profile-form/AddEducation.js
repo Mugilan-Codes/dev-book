@@ -20,13 +20,14 @@ const AddEducation = ({ addEducation }) => {
   const { school, degree, fieldofstudy, from, to, current, description } =
     formData;
 
-  const handleOnChange = (e) =>
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+  const handleOnChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
 
   const handleCheckboxOnChange = (e) => {
-    console.log(e.target.name);
-    console.log(e.target.checked);
-    console.log(e.target.value);
     setFormData({ ...formData, current: !current });
   };
 
@@ -47,7 +48,7 @@ const AddEducation = ({ addEducation }) => {
       <small>* = required field</small>
 
       <form className='form' onSubmit={handleOnSubmit}>
-        <div class='form-group'>
+        <div className='form-group'>
           <input
             type='text'
             placeholder='* School or Bootcamp'
@@ -58,7 +59,7 @@ const AddEducation = ({ addEducation }) => {
           />
         </div>
 
-        <div class='form-group'>
+        <div className='form-group'>
           <input
             type='text'
             placeholder='* Degree or Certificate'
@@ -69,7 +70,7 @@ const AddEducation = ({ addEducation }) => {
           />
         </div>
 
-        <div class='form-group'>
+        <div className='form-group'>
           <input
             type='text'
             placeholder='Field Of Study'

@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 
 import { createProfile, getCurrentProfile } from '../../actions/profile';
 
+// TODO: Optimize code
 /*
   NOTE: declare initialState outside of component
   so that it doesn't trigger a useEffect

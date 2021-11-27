@@ -20,12 +20,12 @@ const AddExperience = ({ addExperience }) => {
   const { company, title, location, from, to, current, description } = formData;
 
   const handleOnChange = (e) =>
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
 
   const handleCheckboxOnChange = (e) => {
-    console.log(e.target.name);
-    console.log(e.target.checked);
-    console.log(e.target.value);
     setFormData({ ...formData, current: !current });
   };
 
